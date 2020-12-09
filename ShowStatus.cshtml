@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "ShowStatus";
+}
+
+@model Dictionary<string, string>
+<h1>Show Status</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Author</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td>@p.Key</td>
+                <td>@p.Value</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
